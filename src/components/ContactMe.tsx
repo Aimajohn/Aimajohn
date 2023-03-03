@@ -13,7 +13,7 @@ function ContactMe({}: Props) {
   const [sentForm, setSentForm] = useState(false);
   return (
     <div className="pb-20 bg-[#fbae3c] snap-center relative min-h-screen">
-      <div className="hidden lg:block custom-shape-divider-top-1677819225">
+      <div className="hidden md:block custom-shape-divider-top-1677819225">
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
@@ -70,7 +70,7 @@ function ContactMe({}: Props) {
                 <div className=" lg:col-start-1  flex flex-col gap-2">
                   <label htmlFor="name">Nombre</label>
                   <Field
-                    className="focus:outline-orange-500 focus:outline-2 outline-none rounded-md text-zinc-800  placeholder:text-base w-5/6 placeholder:text-gray-400 px-4 py-3"
+                    className="focus:outline-orange-500 focus:outline-2 outline-none rounded-md text-zinc-800  placeholder:text-base w-full lg:w-5/6 placeholder:text-gray-400 px-4 py-3"
                     id="name"
                     name="name"
                     placeholder="Tu nombre aqui"
@@ -88,7 +88,7 @@ function ContactMe({}: Props) {
                 <div className="w-full lg:row-start-2 flex flex-col gap-y-1 gap-x-2 ">
                   <label htmlFor="email">Email</label>
                   <Field
-                    className=" focus:outline-orange-500 focus:outline-2 outline-none  rounded-md text-zinc-800  placeholder:text-base w-5/6 placeholder:text-gray-400 px-4 py-3"
+                    className=" focus:outline-orange-500 focus:outline-2 outline-none  rounded-md text-zinc-800  placeholder:text-base w-full lg:w-5/6 placeholder:text-gray-400 px-4 py-3"
                     id="email"
                     name="email"
                     placeholder="Escribe un correo"

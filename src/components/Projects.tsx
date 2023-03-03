@@ -35,7 +35,7 @@ function Projects({}: Props) {
         Projects
         <hr  className="mt-4"/>
       </h2>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+      <div className="grid grid-cols-1  lg:grid-cols-2 gap-12">
         <div className="w-full bg-[#000d21] p-6 rounded-md">
           <div className="mb-4 h-60 overflow-hidden">
             <img src="/src/assets/themoovies.png" alt="The Moovies page img" />
@@ -62,9 +62,8 @@ function Projects({}: Props) {
             </div>
           </div>
         </div>
-        <div className="h-min grid grid-cols-1 lg:grid-cols-[50%_auto] gap-6 bg-[#18181b] p-6 rounded-md">
-          <div className="shadow-md h-80 bg-cover lg:h-full object-contain  lg:mb-4  rounded-md overflow-hidden bg-[url('/src/assets/toowrite.png')]">
-            {/* <img className="w-full h-20 " src="/src/assets/toowrite.png" alt="TooWrite page img" /> */}
+        <div className="h-min grid grid-cols-1 lg:grid-cols-1 xl:h-full lg:h-min xl:grid-cols-2   md:grid-cols-[40%_auto] gap-6 bg-[#18181b] p-6 rounded-md">
+          <div className="shadow-md xl:max-h-fit h-80 w-full bg-no-repeat bg-cover xl:h-full xl:bg-center xl:bg-contain  lg:mb-4  rounded-md overflow-hidden bg-[url('/src/assets/toowrite.png')]">
           </div>
           <div>
             <h4 className="font-semibold text-2xl  my-6">TooWrite.</h4>
@@ -116,8 +115,8 @@ function Projects({}: Props) {
             </div>
           </div>
         </div>
-        <div className=" h-min grid grid-cols-1 lg:grid-cols-[50%_auto] gap-6 bg-[#041a3d] p-6 rounded-md">
-          <div className="lg:mb-4 shadow-md h-80 bg-cover rounded-md overflow-hidden bg-[url('/src/assets/todoapp.png')]">
+        <div className="h-min grid grid-cols-1 lg:grid-cols-1 xl:h-full lg:h-min xl:grid-cols-2   md:grid-cols-[40%_auto] gap-6 bg-[#041a3d] p-6 rounded-md">
+          <div className="shadow-md xl:max-h-fit h-80 w-full bg-no-repeat bg-cover xl:h-full xl:bg-center xl:bg-contain  lg:mb-4  rounded-md overflow-hidden bg-[url('/src/assets/todoapp.png')]">
             {/* <img src="/src/assets/todoapp.png" alt="To Do page img" /> */}
           </div>
           <div>

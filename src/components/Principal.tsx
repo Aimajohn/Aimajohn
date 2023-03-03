@@ -5,8 +5,8 @@ type Props = {}
 
 function Principal({}: Props) {
   return (
-    <div className="snap-center min-h-screen -mb-20 lg:-mb-40 flex items-center  justify-center">
-      <div className='px-16 lg:px-20 items-center flex flex-col justify-center '>
+    <div className="px-16 lg:px-20 snap-center min-h-screen md:min-h-[70vh] lg:min-h-screen  -mb-20 lg:-mb-40 flex items-center  justify-between">
+      <div className=' items-center flex flex-col justify-center '>
       <h1 className="relative text-5xl font-[Montserrat] font-bold text-zinc-100">
         <span className='hidden absolute text-sm left-[400px] mt-2 -top-3 bg-extraOrange text-white font-semibold px-4 py-2 w-fit rounded-full '>+3 years experience</span>
           <span className=" text-extraOrange tracking-tight">
@@ -15,7 +15,7 @@ function Principal({}: Props) {
           </span>
           <span>Front-End Web Developer </span>
         </h1>
-        <div className=" flex-wrap mt-10 text-lg flex gap-2">
+        <div className="justify-start w-full flex-wrap mt-10 text-lg flex gap-2">
           <a
             href="#skills"
             className="flex hover:bg-orange-700 text-white items-center gap-2 leading-[3rem] w-min pl-7 pr-4 h-12 font-semibold rounded-md bg-orange-600"
@@ -45,7 +45,7 @@ function Principal({}: Props) {
           </a>
         </div>
       </div>
-      <div className='hidden w-[530px] h-[530px]  relative  '>
+      <div className='hidden lg:block w-[530px] h-[530px]  relative  '>
         <div className=' absolute top-8 right-0  rounded-xl w-[290px] h-[300px]  bg-[#f8fcf1]'></div>
         <div className=' absolute  bottom-10 left-0  rounded-xl w-full h-64  bg-[#f8fcf1]'></div>
         <img className='absolute  top-10 w-[520px] '  src="/src/assets/homeimg.png" alt="" />

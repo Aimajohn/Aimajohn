@@ -6,9 +6,7 @@ function Navbar() {
         <Link to='/'>
         <img width={175} src="/src/assets/Ayoon.png" alt="Ayoon logo" />
         </Link>
-      <div>
-        <button>Contact</button>
-      </div>
+      
     </nav>
   );
 }
