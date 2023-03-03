@@ -12,8 +12,8 @@ type FormValues = {
 function ContactMe({}: Props) {
   const [sentForm, setSentForm] = useState(false);
   return (
-    <div className="bg-[#fbae3c] snap-center relative h-screen">
-      <div className=" custom-shape-divider-top-1677819225">
+    <div className="pb-20 bg-[#fbae3c] snap-center relative min-h-screen">
+      <div className="hidden lg:block custom-shape-divider-top-1677819225">
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
@@ -26,8 +26,8 @@ function ContactMe({}: Props) {
           ></path>
         </svg>
       </div>
-      <div className="pt-20 px-20">
-      <h2 className="text-5xl font-[Montserrat] font-bold text-zinc-100 mb-12">
+      <div className="pt-20 px-10 lg:px-20">
+      <h2 className="leading-tight text-5xl font-[Montserrat] font-bold text-zinc-100 mb-12">
                 Love to hear from you,
                 <br />
                 Get in touch ❤️
@@ -64,10 +64,10 @@ function ContactMe({}: Props) {
           }}
         >
           {({ errors }) => (
-            <Form className="mx-auto bg-zinc-900 w-4/5  p-20 rounded-md text-white font-semibold font-Montserrat text-xl">
+            <Form className="mx-auto bg-zinc-900 w-full lg:w-4/5  p-10 lg:p-20 rounded-md text-white font-semibold font-Montserrat text-xl">
               
-              <div className="mb-6 grid grid-cols-2 gap-x-4">
-                <div className=" col-start-1  flex flex-col gap-2">
+              <div className="mb-6 grid grid-cols-1 lg:grid-cols-2 gap-x-4">
+                <div className=" lg:col-start-1  flex flex-col gap-2">
                   <label htmlFor="name">Nombre</label>
                   <Field
                     className="focus:outline-orange-500 focus:outline-2 outline-none rounded-md text-zinc-800  placeholder:text-base w-5/6 placeholder:text-gray-400 px-4 py-3"
@@ -85,7 +85,7 @@ function ContactMe({}: Props) {
                   />
                   </div>
                 </div>
-                <div className="w-full row-start-2 flex flex-col gap-y-1 gap-x-2 ">
+                <div className="w-full lg:row-start-2 flex flex-col gap-y-1 gap-x-2 ">
                   <label htmlFor="email">Email</label>
                   <Field
                     className=" focus:outline-orange-500 focus:outline-2 outline-none  rounded-md text-zinc-800  placeholder:text-base w-5/6 placeholder:text-gray-400 px-4 py-3"
@@ -94,7 +94,7 @@ function ContactMe({}: Props) {
                     placeholder="Escribe un correo"
                     type="email"
                   />
-                  <div className="h-5 ">
+                  <div className="h-10 lg:h-5 ">
                       <ErrorMessage
                         name="email"
                         component={() => (
@@ -121,7 +121,7 @@ function ContactMe({}: Props) {
                       />
                   </div>
                 </div> */}
-                <div className=" col-start-2 row-start-1 row-end-4 flex flex-col gap-2">
+                <div className=" lg:col-start-2 lg:row-start-1 row-end-4 flex flex-col gap-2">
                   <label htmlFor="text">Mensaje</label>
                   <Field
                     className=" focus:outline-orange-500 focus:outline-2 outline-none h-full resize-none  rounded-md text-zinc-800  placeholder:text-base w-full placeholder:text-gray-400 p-4"

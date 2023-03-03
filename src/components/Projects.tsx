@@ -7,7 +7,7 @@ type Props = {};
 
 function Projects({}: Props) {
   return (
-    <div id="Projects" className="snap-start relative text-white bg-greenLightest p-40">
+    <div id="Projects" className="snap-start relative text-white bg-greenLightest px-12 py-40 lg:p-40">
       <div className="custom-shape-divider-top-1677803367">
         <svg
           data-name="Layer 1"
@@ -35,20 +35,20 @@ function Projects({}: Props) {
         Projects
         <hr  className="mt-4"/>
       </h2>
-      <div className="grid grid-cols-2 gap-12">
-        <div className=" bg-[#000d21] p-6 rounded-md">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="w-full bg-[#000d21] p-6 rounded-md">
           <div className="mb-4 h-60 overflow-hidden">
             <img src="/src/assets/themoovies.png" alt="The Moovies page img" />
           </div>
-          <div>
+          <div >
             <h4 className="font-semibold text-xl mb-2">The Moovies</h4>
-            <p className="mb-4">
+            <p className="mb-6">
               Página de películas que utiliza la api The MovieDB para obtener
               información sobre cualquier película y conocer las peliculas en
               estreno. Al ser una api gratuita los tiempos de espera pueden
               llegar a 10s.
             </p>
-            <div className="flex flex-row gap-4">
+            <div className="mb-6 flex flex-row gap-4">
               <a href="https://aimajoke.github.io/themoviedb-api/public/" target="_blank" rel="noopener noreferrer"
                 className="hover:cursor-pointer flex items-center flex-row justify-center gap-1 text-yellow-100 hover:shadow-md hover:bg-orange-600 hover:text-white px-5 py-2 font-semibold rounded-md bg-orange-500"
               >
@@ -62,9 +62,9 @@ function Projects({}: Props) {
             </div>
           </div>
         </div>
-        <div className="h-min grid grid-cols-[50%_auto] gap-6 bg-[#18181b] p-6 rounded-md">
-          <div className="shadow-md  mb-4  rounded-md overflow-hidden">
-            <img src="/src/assets/toowrite.png" alt="TooWrite page img" />
+        <div className="h-min grid grid-cols-1 lg:grid-cols-[50%_auto] gap-6 bg-[#18181b] p-6 rounded-md">
+          <div className="shadow-md h-80 bg-cover lg:h-full object-contain  lg:mb-4  rounded-md overflow-hidden bg-[url('/src/assets/toowrite.png')]">
+            {/* <img className="w-full h-20 " src="/src/assets/toowrite.png" alt="TooWrite page img" /> */}
           </div>
           <div>
             <h4 className="font-semibold text-2xl  my-6">TooWrite.</h4>
@@ -96,13 +96,13 @@ function Projects({}: Props) {
           </div>
           <div>
             <h4 className="font-semibold text-xl mb-2">Just Books.</h4>
-            <p className="mb-4">
+            <p className="mb-6">
               Página de películas que utiliza la api The MovieDB para obtener
               información sobre cualquier película y conocer las peliculas en
               estreno. Al ser una api gratuita los tiempos de espera pueden
               llegar a 10s.
             </p>
-            <div className="flex flex-row gap-4">
+            <div className="flex flex-row gap-4 mb-6">
               <a href="https://aimajoke.github.io/tailgreeen/" target="_blank" rel="noopener noreferrer"
                 className="hover:cursor-pointer flex items-center flex-row justify-center gap-1 text-yellow-100 hover:shadow-md hover:bg-orange-600 hover:text-white px-5 py-2 font-semibold rounded-md bg-orange-500"
               >
@@ -116,9 +116,9 @@ function Projects({}: Props) {
             </div>
           </div>
         </div>
-        <div className=" h-min grid grid-cols-[50%_auto] gap-6 bg-[#041a3d] p-6 rounded-md">
-          <div className="mb-4  rounded-md overflow-hidden">
-            <img src="/src/assets/todoapp.png" alt="To Do page img" />
+        <div className=" h-min grid grid-cols-1 lg:grid-cols-[50%_auto] gap-6 bg-[#041a3d] p-6 rounded-md">
+          <div className="lg:mb-4 shadow-md h-80 bg-cover rounded-md overflow-hidden bg-[url('/src/assets/todoapp.png')]">
+            {/* <img src="/src/assets/todoapp.png" alt="To Do page img" /> */}
           </div>
           <div>
             <h4 className="font-semibold text-2xl  my-6">
