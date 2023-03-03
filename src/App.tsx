@@ -4,16 +4,16 @@ import './App.css'
 import Navbar from './components/Navbar'
 import {Routes, Route} from 'react-router-dom'
 import LandingPage from './pages/LandingPage'
+import Notfound from './pages/Notfound'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div className="bg-[#012E40] relative">
       <Navbar/>
       <Routes>
-        <Route path='/' element={<LandingPage/>}/>
-        Rou
+        <Route path='/Aimajoke/' element={<LandingPage/>}/>
+        <Route path='/Aimajoke/*' element={<Notfound/>}/>
       </Routes>
       
     </div>
