@@ -2,6 +2,8 @@ import React from "react";
 
 import { AiFillEye } from "react-icons/ai";
 import { HiCode } from "react-icons/hi";
+import tailgreenImg from '../assets/tailgreen.png'
+import theMooviesImg from '../assets/themoovies.png'
 
 type Props = {};
 
@@ -38,7 +40,7 @@ function Projects({}: Props) {
       <div className="grid grid-cols-1  lg:grid-cols-2 gap-12">
         <div className="w-full bg-[#000d21] p-6 rounded-md">
           <div className="mb-4 h-60 overflow-hidden">
-            <img src="/src/assets/themoovies.png" alt="The Moovies page img" />
+            <img src={theMooviesImg} alt="The Moovies page img" />
           </div>
           <div >
             <h4 className="font-semibold text-xl mb-2">The Moovies</h4>
@@ -91,7 +93,7 @@ function Projects({}: Props) {
 
         <div className=" bg-[#1f1f1f] p-6 rounded-md">
           <div className="mb-4 h-60 rounded-md overflow-hidden">
-            <img src="/src/assets/tailgreen.png" alt="Just Books page img" />
+            <img src={tailgreenImg} alt="Just Books page img" />
           </div>
           <div>
             <h4 className="font-semibold text-xl mb-2">Just Books.</h4>

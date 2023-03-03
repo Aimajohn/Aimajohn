@@ -1,5 +1,6 @@
 import React from 'react'
 import {FaAngleDown} from 'react-icons/fa'
+import developer from '../assets/homeimg.png'
 
 type Props = {}
 
@@ -48,7 +49,7 @@ function Principal({}: Props) {
       <div className='hidden lg:block w-[530px] h-[530px]  relative  '>
         <div className=' absolute top-8 right-0  rounded-xl w-[290px] h-[300px]  bg-[#f8fcf1]'></div>
         <div className=' absolute  bottom-10 left-0  rounded-xl w-full h-64  bg-[#f8fcf1]'></div>
-        <img className='absolute  top-10 w-[520px] '  src="/src/assets/homeimg.png" alt="" />
+        <img className='absolute  top-10 w-[520px] '  src={developer} alt="" />
       </div>
         
         
