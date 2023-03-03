@@ -7,6 +7,7 @@ html{
     scroll-behavior: smooth;
 }
 
+
 .custom-shape-divider-top-1677781969 {
     position: absolute;
     top: 0;
@@ -46,4 +47,46 @@ html{
 
 .custom-shape-divider-top-1677803367 .shape-fill {
     fill: #172026;
+}
+
+.custom-shape-divider-top-1677812606 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1677812606 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 73px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1677812606 .shape-fill {
+    fill: #038C65;
+}
+
+
+.custom-shape-divider-top-1677819225 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1677819225 svg {
+    position: relative;
+    display: block;
+    width: calc(175% + 1.3px);
+    height: 138px;
+}
+
+.custom-shape-divider-top-1677819225 .shape-fill {
+    fill: #FFFFFF;
 }
