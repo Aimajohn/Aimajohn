@@ -8,12 +8,12 @@ type Props = {};
 
 function MainPortfolio({}: Props) {
   return (
-    <div>
+    <div className="snap-y">
       <Principal/>
 
       <div
         id="skills"
-        className=" relative w-full pt-40  h-screen bg-greenPureDark"
+        className="snap-center  relative w-full pt-40  h-screen bg-greenPureDark"
       >
         <div className="custom-shape-divider-top-1677781969">
           <svg

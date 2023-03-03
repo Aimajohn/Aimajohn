@@ -7,7 +7,7 @@ type Props = {};
 
 function Projects({}: Props) {
   return (
-    <div id="Projects" className="relative text-white bg-greenLightest p-40">
+    <div id="Projects" className="snap-start relative text-white bg-greenLightest p-40">
       <div className="custom-shape-divider-top-1677803367">
         <svg
           data-name="Layer 1"
