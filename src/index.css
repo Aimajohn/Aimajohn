@@ -90,3 +90,20 @@ html{
 .custom-shape-divider-top-1677819225 .shape-fill {
     fill: #FFFFFF;
 }
+
+.skillWrapper{
+    @apply bg-white rounded-lg overflow-hidden w-full mx-auto my-auto h-full px-3 items-center flex justify-center font-Montserrat font-bold relative
+}
+
+.skillWrapper:hover{
+    @apply !bg-zinc-600 cursor-pointer
+}
+
+.skillWrapper::after{
+    content: '';
+    @apply w-full h-full absolute 
+}
+
+.skillWrapper img{
+    @apply  object-contain h-20 max-w-full 
+}

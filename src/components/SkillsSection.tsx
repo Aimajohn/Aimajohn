@@ -1,13 +1,102 @@
-import React from "react";
+import { useState, MouseEvent } from "react";
+import nodejsImg from "../assets/nodejs-icon.png";
+import githubImg from "../assets/github-icon.png";
+import githubDarkImg from "../assets/github-iconDark.png";
+import htmlCssImg from "../assets/html&css-icon.png";
+import mysqlImg from "../assets/mysql-icon.png";
+import npmImg from "../assets/npm-icon.png";
+import reactImg from "../assets/react-icon.png";
+import tailwindImg from "../assets/tailwind-icon.png";
+import photoshopImg from "../assets/photoshop-icon.svg";
+import typescriptImg from "../assets/typescript-icon.png";
+import Technology from "./Technology";
+import { FaBorderNone } from "react-icons/fa";
+type Tech = {
+  title: string;
+  description: string;
+  logo: string;
+};
 
 type Props = {};
 
 function SkillsSection({}: Props) {
+  const techs = [
+    {
+      title: "NodeJS",
+      logo: nodejsImg,
+      description:
+        "Fast and efficient development experience with functional components, I can write clean and concise code that is easy to reason about and maintain. The use of hooks like useState and useReducer makes state management simple and intuitive. These hooks allow me to easily track and update state, triggering re-renders and enabling dynamic updates to the user interface. Additionally, hooks like useEffect make it easy to manage side effects and control component lifecycles.",
+    },
+    {
+      title: "MySql",
+      logo: mysqlImg,
+      description:
+        "Fast and efficient development experience with functional components, I can write clean and concise code that is easy to reason about and maintain. The use of hooks like useState and useReducer makes state management simple and intuitive. These hooks allow me to easily track and update state, triggering re-renders and enabling dynamic updates to the user interface. Additionally, hooks like useEffect make it easy to manage side effects and control component lifecycles.",
+    },
+    {
+      title: "Photoshop",
+      logo: photoshopImg,
+      description:
+        "Fast and efficient development experience with functional components, I can write clean and concise code that is easy to reason about and maintain. The use of hooks like useState and useReducer makes state management simple and intuitive. These hooks allow me to easily track and update state, triggering re-renders and enabling dynamic updates to the user interface. Additionally, hooks like useEffect make it easy to manage side effects and control component lifecycles.",
+    },
+    {
+      title: "npm",
+      logo: npmImg,
+      description:
+        "Fast and efficient development experience with functional components, I can write clean and concise code that is easy to reason about and maintain. The use of hooks like useState and useReducer makes state management simple and intuitive. These hooks allow me to easily track and update state, triggering re-renders and enabling dynamic updates to the user interface. Additionally, hooks like useEffect make it easy to manage side effects and control component lifecycles.",
+    },
+    {
+      title: "TailwindCSS",
+      logo: tailwindImg,
+      description:
+        "Fast and efficient development experience with functional components, I can write clean and concise code that is easy to reason about and maintain. The use of hooks like useState and useReducer makes state management simple and intuitive. These hooks allow me to easily track and update state, triggering re-renders and enabling dynamic updates to the user interface. Additionally, hooks like useEffect make it easy to manage side effects and control component lifecycles.",
+    },
+    {
+      title: "ReactJS",
+      logo: reactImg,
+      description:
+        "Fast and efficient development experience with functional components, I can write clean and concise code that is easy to reason about and maintain. The use of hooks like useState and useReducer makes state management simple and intuitive. These hooks allow me to easily track and update state, triggering re-renders and enabling dynamic updates to the user interface. Additionally, hooks like useEffect make it easy to manage side effects and control component lifecycles.",
+    },
+    {
+      title: "Html, Css & Javascript",
+      logo: htmlCssImg,
+      description:
+        "Fast and efficient development experience with functional components, I can write clean and concise code that is easy to reason about and maintain. The use of hooks like useState and useReducer makes state management simple and intuitive. These hooks allow me to easily track and update state, triggering re-renders and enabling dynamic updates to the user interface. Additionally, hooks like useEffect make it easy to manage side effects and control component lifecycles.",
+    },
+    {
+      title: "Git & Github",
+      logo: githubDarkImg,
+      description:
+        "Fast and efficient development experience with functional components, I can write clean and concise code that is easy to reason about and maintain. The use of hooks like useState and useReducer makes state management simple and intuitive. These hooks allow me to easily track and update state, triggering re-renders and enabling dynamic updates to the user interface. Additionally, hooks like useEffect make it easy to manage side effects and control component lifecycles.",
+    },
+    {
+      title: "Typescript",
+      logo: typescriptImg,
+      description:
+        "Fast and efficient development experience with functional components, I can write clean and concise code that is easy to reason about and maintain. The use of hooks like useState and useReducer makes state management simple and intuitive. These hooks allow me to easily track and update state, triggering re-renders and enabling dynamic updates to the user interface. Additionally, hooks like useEffect make it easy to manage side effects and control component lifecycles.",
+    },
+  ];
+
+  const [focusTech, setFocusTech] = useState({
+    title: techs[0].title,
+    description: techs[0].description,
+    logo: techs[0].logo,
+  });
+
+  const selectTechHandler = (event: MouseEvent) => {
+    setClickedTech(true);
+    const ele = event.target as HTMLElement;
+    const tech = parseInt(ele.id.charAt(1));
+    setFocusTech({
+      title: techs[tech].title,
+      logo: techs[tech].logo,
+      description: techs[tech].description,
+    });
+  };
+
+  const [clickedTech, setClickedTech] = useState(false);
   return (
-    <div
-      id="skills"
-      className=" snap-center pb-20 relative w-full pt-40  min-h-screen bg-greenPureDark"
-    >
+    <div className="px-12 lg:px-40 snap-center pb-20 relative w-full  h-screen bg-greenPureDark">
       <div className="custom-shape-divider-top-1677781969">
         <svg
           data-name="Layer 1"
@@ -22,12 +111,13 @@ function SkillsSection({}: Props) {
         </svg>
       </div>
       <h2
-        className="text-5xl mb-12 font-[Montserrat] font-bold text-gray-100
-         px-20 text-center"
+        id="skills"
+        className="pt-40 mb-4 text-5xl font-[Montserrat] font-bold text-gray-100"
       >
         Skills
       </h2>
-      <div className="  justify-center flex flex-wrap gap-10 ">
+      <hr className="mb-12" />
+      {/* <div className="flex mb-20 justify-center flex-wrap gap-10 ">
         <div className="bg-extraOrange p-8 rounded-md basis-64 text-center">
           <h3 className="mb-4 text-gray-100 font-Nunito font-black text-4xl">
             Back-End
@@ -87,6 +177,89 @@ function SkillsSection({}: Props) {
             </li>
           </ul>
         </div>
+      </div> */}
+      <div className="flex gap-16 justify-center ">
+        <div
+          onClick={selectTechHandler}
+          className="grid grid-cols-5 gap-3 w-1/2 aspect-[6632/5279]"
+        >
+          <div
+            id="s0"
+            className="skillWrapper col-start-1 col-end-3 !bg-gray-700"
+          >
+            <img src={nodejsImg} alt="nodeJS icon" />
+            {/* <p>NodeJS</p> */}
+          </div>
+          <div
+            id="s1"
+            className="skillWrapper aspect-square !px-1 !bg-emerald-700"
+          >
+            <img src={mysqlImg} alt="Mysql icon" />
+            {/* <p>MySql</p> */}
+          </div>
+          <div
+            id="s2"
+            className="skillWrapper col-start-4 col-end-6 row-start-1 row-end-3 aspect-square p-0 !bg-orange-500"
+          >
+            <img src={photoshopImg} className="!h-full" alt="photoshop icon" />
+            {/* <p>Photoshop</p> */}
+          </div>
+          <div id="s3" className="skillWrapper aspect-square !bg-cyan-700">
+            <img src={npmImg} alt="npm" />
+            {/* <p>npm</p> */}
+          </div>
+          <div
+            id="s4"
+            className="skillWrapper !bg-[#004AB5] col-start-2 col-end-4 gap-1 items-center !text-white"
+          >
+            <img src={tailwindImg} className="!w-4/12" alt="TailwindCSS icon" />
+            <p>TailwindCSS</p>
+          </div>
+          <div
+            id="s5"
+            className="skillWrapper row-start-3 row-end-5 col-start-1 col-end-3 !bg-zinc-700 aspect-square"
+          >
+            <img src={reactImg} className="!p-3 !h-full" alt="React icon" />
+            {/* <p>React</p> */}
+          </div>
+          <div
+            id="s6"
+            className="skillWrapper col-start-3 col-end-5 !bg-red-900"
+          >
+            <img
+              className="!w-10/12"
+              src={htmlCssImg}
+              alt="HTML, CSS & Javascript"
+            />
+            {/* <p>HTML & CSS</p> */}
+          </div>
+          <div
+            id="s7"
+            className="skillWrapper row-start-3 row-end-5 flex-col text-center col-start-5 !text-white  !bg-gray-600"
+          >
+            <img src={githubDarkImg} alt="Github icon" />
+            <p>Git & Github</p>
+          </div>
+          <div
+            id="s8"
+            className="skillWrapper col-start-3 col-end-5 gap-2 items-center !bg-[#153749] text-white"
+          >
+            <img
+              className="!w-3/12"
+              src={typescriptImg}
+              alt="Typescript icon"
+            />
+            <p>Typescript</p>
+          </div>
+        </div>
+        {clickedTech ? (
+          <Technology
+            close={setClickedTech}
+            title={focusTech.title}
+            description={focusTech.description}
+            logo={focusTech.logo}
+          />
+        ) : null}
       </div>
     </div>
   );

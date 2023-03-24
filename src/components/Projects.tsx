@@ -2,14 +2,17 @@ import React from "react";
 
 import { AiFillEye } from "react-icons/ai";
 import { HiCode } from "react-icons/hi";
-import tailgreenImg from '../assets/tailgreen.png'
-import theMooviesImg from '../assets/themoovies.png'
+import tailgreenImg from "../assets/tailgreen.png";
+import theMooviesImg from "../assets/themoovies.png";
 
 type Props = {};
 
 function Projects({}: Props) {
   return (
-    <div id="Projects" className="snap-start relative text-white bg-greenLightest px-12 py-40 lg:p-40">
+    <div
+      id="Projects"
+      className="snap-start relative text-white bg-greenLightest px-12 py-40 lg:p-40"
+    >
       <div className="custom-shape-divider-top-1677803367">
         <svg
           data-name="Layer 1"
@@ -35,14 +38,14 @@ function Projects({}: Props) {
       </div>
       <h2 className="mb-12 text-5xl font-[Montserrat] font-bold text-zinc-100">
         Projects
-        <hr  className="mt-4"/>
+        <hr className="mt-4" />
       </h2>
       <div className="grid grid-cols-1  lg:grid-cols-2 gap-12">
         <div className="w-full bg-[#000d21] p-6 rounded-md">
           <div className="mb-4 h-60 overflow-hidden">
             <img src={theMooviesImg} alt="The Moovies page img" />
           </div>
-          <div >
+          <div>
             <h4 className="font-semibold text-xl mb-2">The Moovies</h4>
             <p className="mb-6">
               Página de películas que utiliza la api The MovieDB para obtener
@@ -51,12 +54,18 @@ function Projects({}: Props) {
               llegar a 10s.
             </p>
             <div className="mb-6 flex flex-row gap-4">
-              <a href="https://aimajoke.github.io/themoviedb-api/public/" target="_blank" rel="noopener noreferrer"
+              <a
+                href="https://aimajoke.github.io/themoviedb-api/public/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="hover:cursor-pointer flex items-center flex-row justify-center gap-1 text-yellow-100 hover:shadow-md hover:bg-orange-600 hover:text-white px-5 py-2 font-semibold rounded-md bg-orange-500"
               >
                 <AiFillEye /> Live demo
               </a>
-              <a href="https://github.com/Aimajoke/themoviedb-api" target="_blank" rel="noopener noreferrer"
+              <a
+                href="https://github.com/Aimajoke/themoviedb-api"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="hover:cursor-pointer flex items-center flex-row justify-center gap-1 text-yellow-100 hover:shadow-md hover:bg-greenNormal hover:text-white px-5 py-2 font-semibold rounded-md bg-green-600"
               >
                 <HiCode className="inline-block" /> Code
@@ -65,8 +74,7 @@ function Projects({}: Props) {
           </div>
         </div>
         <div className="h-min grid grid-cols-1 lg:grid-cols-1 xl:h-full lg:h-min xl:grid-cols-2   md:grid-cols-[40%_auto] gap-6 bg-[#18181b] p-6 rounded-md">
-          <div className="shadow-md xl:max-h-fit h-80 w-full bg-no-repeat bg-cover xl:h-full xl:bg-center xl:bg-contain  lg:mb-4  rounded-md overflow-hidden bg-[url('/src/assets/toowrite.png')]">
-          </div>
+          <div className="shadow-md xl:max-h-fit h-80 w-full bg-no-repeat bg-cover xl:h-full xl:bg-center xl:bg-contain  lg:mb-4  rounded-md overflow-hidden bg-[url('/src/assets/toowrite.png')]"></div>
           <div>
             <h4 className="font-semibold text-2xl  my-6">TooWrite.</h4>
             <p className="mb-12">
@@ -77,12 +85,18 @@ function Projects({}: Props) {
               wall.
             </p>
             <div className="flex flex-row gap-4">
-              <a href="https://todo-mern-stack-production-9aa8.up.railway.app/TODO-MERN-STACK/" target="_blank" rel="noopener noreferrer"
+              <a
+                href="https://todo-mern-stack-production-9aa8.up.railway.app/TODO-MERN-STACK/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="hover:cursor-pointer flex items-center flex-row justify-center gap-1 text-yellow-100 hover:shadow-md hover:bg-orange-600 hover:text-white px-5 py-2 font-semibold rounded-md bg-orange-500"
               >
                 <AiFillEye /> Live demo
               </a>
-              <a href="https://github.com/Aimajoke/TODO-MERN-STACK" target="_blank" rel="noopener noreferrer"
+              <a
+                href="https://github.com/Aimajoke/TODO-MERN-STACK"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="hover:cursor-pointer flex items-center flex-row justify-center gap-1 text-yellow-100 hover:shadow-md hover:bg-greenNormal hover:text-white px-5 py-2 font-semibold rounded-md bg-green-600"
               >
                 <HiCode className="inline-block" /> Code
@@ -104,12 +118,18 @@ function Projects({}: Props) {
               llegar a 10s.
             </p>
             <div className="flex flex-row gap-4 mb-6">
-              <a href="https://aimajoke.github.io/tailgreeen/" target="_blank" rel="noopener noreferrer"
+              <a
+                href="https://aimajoke.github.io/tailgreeen/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="hover:cursor-pointer flex items-center flex-row justify-center gap-1 text-yellow-100 hover:shadow-md hover:bg-orange-600 hover:text-white px-5 py-2 font-semibold rounded-md bg-orange-500"
               >
                 <AiFillEye /> Live demo
               </a>
-              <a href="https://github.com/Aimajoke/tailgreeen" target="_blank" rel="noopener noreferrer"
+              <a
+                href="https://github.com/Aimajoke/tailgreeen"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="hover:cursor-pointer flex items-center flex-row justify-center gap-1 text-yellow-100 hover:shadow-md hover:bg-greenNormal hover:text-white px-5 py-2 font-semibold rounded-md bg-green-600"
               >
                 <HiCode className="inline-block" /> Code
@@ -132,12 +152,18 @@ function Projects({}: Props) {
               llegar a 10s.
             </p>
             <div className="flex flex-row gap-4">
-              <a href="https://aimajoke.github.io/TodoApp-React/" target="_blank" rel="noopener noreferrer"
+              <a
+                href="https://aimajoke.github.io/TodoApp-React/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="hover:cursor-pointer flex items-center flex-row justify-center gap-1 text-yellow-100 hover:shadow-md hover:bg-orange-600 hover:text-white px-5 py-2 font-semibold rounded-md bg-orange-500"
               >
                 <AiFillEye /> Live demo
               </a>
-              <a href="https://github.com/Aimajoke/TodoApp-React" target="_blank" rel="noopener noreferrer"
+              <a
+                href="https://github.com/Aimajoke/TodoApp-React"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="hover:cursor-pointer flex items-center flex-row justify-center gap-1 text-yellow-100 hover:shadow-md hover:bg-greenNormal hover:text-white px-5 py-2 font-semibold rounded-md bg-green-600"
               >
                 <HiCode className="inline-block" /> Code
