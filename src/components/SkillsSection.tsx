@@ -1,4 +1,4 @@
-import { useState, MouseEvent } from "react";
+import { useState, MouseEvent, useEffect } from "react";
 import nodejsImg from "../assets/nodejs-icon.png";
 import githubImg from "../assets/github-icon.png";
 import githubDarkImg from "../assets/github-iconDark.png";
@@ -20,7 +20,7 @@ type Tech = {
 type Props = {};
 
 function SkillsSection({}: Props) {
-  const techs = [
+  const techs: Tech[] = [
     {
       title: "NodeJS",
       logo: nodejsImg,
@@ -83,7 +83,21 @@ function SkillsSection({}: Props) {
     logo: techs[0].logo,
   });
 
+  const [clickedTech, setClickedTech] = useState(false);
+
+  useEffect(() => {
+      if(window.innerWidth > 1100 ){
+        return ;
+      }
+      clickedTech
+        ? document.body.classList.add("overflow-hidden")
+        : document.body.classList.remove("overflow-hidden");
+
+    
+  }, [clickedTech]);
+
   const selectTechHandler = (event: MouseEvent) => {
+
     setClickedTech(true);
     const ele = event.target as HTMLElement;
     const tech = parseInt(ele.id.charAt(1));
@@ -94,9 +108,8 @@ function SkillsSection({}: Props) {
     });
   };
 
-  const [clickedTech, setClickedTech] = useState(false);
   return (
-    <div className="px-12 lg:px-40 snap-center pb-20 relative w-full  h-screen bg-greenPureDark">
+    <div className="px-4 lg:px-40 snap-center pb-20 relative w-full  lg:h-screen bg-greenPureDark">
       <div className="custom-shape-divider-top-1677781969">
         <svg
           data-name="Layer 1"
@@ -178,10 +191,10 @@ function SkillsSection({}: Props) {
           </ul>
         </div>
       </div> */}
-      <div className="flex gap-16 justify-center ">
+      <div className="flex justify-center w-full">
         <div
           onClick={selectTechHandler}
-          className="grid grid-cols-5 gap-3 w-1/2 aspect-[6632/5279]"
+          className="grid grid-cols-4 lg:grid-cols-5 gap-3 w-full sm:max-w-[500px] lg:w-1/2 lg:aspect-[6632/5279]"
         >
           <div
             id="s0"
@@ -192,25 +205,28 @@ function SkillsSection({}: Props) {
           </div>
           <div
             id="s1"
-            className="skillWrapper aspect-square !px-1 !bg-emerald-700"
+            className="skillWrapper col-start-4 row-start-5 lg:row-start-1 lg:col-start-3 aspect-square !px-1 !bg-emerald-700"
           >
             <img src={mysqlImg} alt="Mysql icon" />
             {/* <p>MySql</p> */}
           </div>
           <div
             id="s2"
-            className="skillWrapper col-start-4 col-end-6 row-start-1 row-end-3 aspect-square p-0 !bg-orange-500"
+            className="skillWrapper col-start-3 col-end-5 lg:col-start-4 lg:col-end-6 row-start-1 row-end-3 aspect-square p-0 !bg-orange-500"
           >
             <img src={photoshopImg} className="!h-full" alt="photoshop icon" />
             {/* <p>Photoshop</p> */}
           </div>
-          <div id="s3" className="skillWrapper aspect-square !bg-cyan-700">
+          <div
+            id="s3"
+            className="skillWrapper col-start-4 row-start-4 lg:col-start-1 lg:row-start-2 aspect-square !bg-cyan-700"
+          >
             <img src={npmImg} alt="npm" />
             {/* <p>npm</p> */}
           </div>
           <div
             id="s4"
-            className="skillWrapper !bg-[#004AB5] col-start-2 col-end-4 gap-1 items-center !text-white"
+            className="skillWrapper !bg-[#004AB5] col-start-1 col-end-3 row-start-2 lg:col-start-2 lg:col-end-4 gap-1 items-center !text-white"
           >
             <img src={tailwindImg} className="!w-4/12" alt="TailwindCSS icon" />
             <p>TailwindCSS</p>
@@ -235,14 +251,14 @@ function SkillsSection({}: Props) {
           </div>
           <div
             id="s7"
-            className="skillWrapper row-start-3 row-end-5 flex-col text-center col-start-5 !text-white  !bg-gray-600"
+            className="skillWrapper  flex-col text-center row-start-4 row-end-6 lg:row-start-3 lg:row-end-5 lg:col-start-5 !text-white  !bg-gray-600"
           >
             <img src={githubDarkImg} alt="Github icon" />
             <p>Git & Github</p>
           </div>
           <div
             id="s8"
-            className="skillWrapper col-start-3 col-end-5 gap-2 items-center !bg-[#153749] text-white"
+            className="skillWrapper col-start-1 col-end-3 lg:col-start-3 lg:col-end-5 gap-2 items-center !bg-[#153749] text-white"
           >
             <img
               className="!w-3/12"

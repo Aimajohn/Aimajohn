@@ -21,7 +21,10 @@ module.exports = {
         openSans: ["Open sans", "sans-serif"],
         Poppins: ["Poppins", "sans-serif"],
       },
-    },
+      screens: {
+        'lgMax': {'max': '1279px'}
+    }
   },
   plugins: [],
-};
+}
+}
