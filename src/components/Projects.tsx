@@ -11,7 +11,7 @@ function Projects({}: Props) {
   return (
     <div
       id="Projects"
-      className="snap-start relative text-white bg-greenLightest px-12 py-40 lg:p-40"
+      className="snap-start relative text-white bg-greenLightest px-4 md:px-8 py-40 lg:p-40"
     >
       <div className="custom-shape-divider-top-1677803367">
         <svg

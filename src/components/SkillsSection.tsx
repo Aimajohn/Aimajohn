@@ -109,7 +109,7 @@ function SkillsSection({}: Props) {
   };
 
   return (
-    <div className="px-4 lg:px-40 snap-center pb-20 relative w-full  lg:h-screen bg-greenPureDark">
+    <div className="px-4 md:px-8 lg:px-40 snap-center pb-20 relative w-full  lg:h-screen bg-greenPureDark">
       <div className="custom-shape-divider-top-1677781969">
         <svg
           data-name="Layer 1"

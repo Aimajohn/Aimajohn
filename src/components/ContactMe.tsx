@@ -13,13 +13,12 @@ type FormValues = {
 };
 
 function ContactMe({}: Props) {
-  const form = useRef<HTMLFormElement>(null);
   const [sentForm, setSentForm] = useState(false);
   return (
-    <div className="min-h-screen  flex justify-between flex-col">
+    <div className="min-h-screen  flex justify-between flex-col -mt-1">
       <div
         id="Contact"
-        className="min-h-screen bg-[#fbae3c] snap-center relative"
+        className="min-h-screen pb-40 bg-[#fbae3c] snap-center relative"
       >
         <div className="hidden md:block custom-shape-divider-top-1677819225">
           <svg
@@ -34,7 +33,7 @@ function ContactMe({}: Props) {
             ></path>
           </svg>
         </div>
-        <div className="pt-10 px-10 lg:px-20">
+        <div className="pt-10 px-4 md:px-8 lg:px-40">
           <h2 className="leading-tight text-5xl font-[Montserrat] font-bold text-zinc-100 mb-12">
             Love to hear from you,
             <br />
@@ -88,7 +87,7 @@ function ContactMe({}: Props) {
             }}
           >
             {({ errors }) => (
-              <Form className="relative mx-auto bg-zinc-900 w-full lg:w-4/6  p-10 lg:p-20 lg:py-16 rounded-md text-white font-semibold font-Montserrat text-xl">
+              <Form className="relative mx-auto bg-zinc-900 w-full lg:w-full max-w-[1000px]  p-10 lg:py-16 rounded-md text-white font-semibold font-Montserrat text-xl">
                 <div className="mb-1 grid grid-cols-1 lg:grid-cols-2 gap-x-4">
                   <div className=" lg:col-start-1  flex flex-col gap-2">
                     <label htmlFor="name">Nombre</label>

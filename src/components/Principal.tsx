@@ -6,7 +6,7 @@ type Props = {};
 
 function Principal({}: Props) {
   return (
-    <div className="px-16 lg:px-40 snap-center min-h-screen md:min-h-[70vh] lg:min-h-screen  -mb-20 lg:-mb-40 flex items-center  justify-between">
+    <div className="px-4 md:px-8 lg:px-40 snap-center min-h-screen md:min-h-[70vh] lg:min-h-screen  -mb-20 lg:-mb-40 flex items-center  justify-between">
       <div className=" items-center flex flex-col justify-center ">
         <h1 className="relative text-5xl font-[Montserrat] font-bold text-zinc-100">
           <span className="hidden absolute text-sm left-[400px] mt-2 -top-3 bg-extraOrange text-white font-semibold px-4 py-2 w-fit rounded-full ">
