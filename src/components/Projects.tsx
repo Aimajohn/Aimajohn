@@ -112,10 +112,13 @@ function Projects({}: Props) {
           <div>
             <h4 className="font-semibold text-xl mb-2">Just Books.</h4>
             <p className="mb-6">
-              Página de películas que utiliza la api The MovieDB para obtener
-              información sobre cualquier película y conocer las peliculas en
-              estreno. Al ser una api gratuita los tiempos de espera pueden
-              llegar a 10s.
+              Proyecto de tienda de películas en línea, desarrollado utilizando
+              HTML y estilos de Tailwind CSS. Mi enfoque fue crear una
+              experiencia de usuario fluida y adaptable que se ajusta a
+              cualquier tamaño de pantalla, gracias a la utilización de media
+              queries. Para garantizar un alto rendimiento y accesibilidad,
+              realicé una auditoría con Lighthouse, que me permitió optimizar y
+              mejorar la calidad de la tienda en línea.
             </p>
             <div className="flex flex-row gap-4 mb-6">
               <a
@@ -146,10 +149,7 @@ function Projects({}: Props) {
               Getting <span className="text-blue-900">sh</span>it done
             </h4>
             <p className="mb-12">
-              Página de películas que utiliza la api The MovieDB para obtener
-              información sobre cualquier película y conocer las peliculas en
-              estreno. Al ser una api gratuita los tiempos de espera pueden
-              llegar a 10s.
+            La página de escribir to-dos es una aplicación web hecha con React y manejo de estado, diseñada para ayudar a los usuarios a crear y mantener una lista de tareas diarias. La interfaz de usuario es moderna y fácil de usar, y permite a los usuarios agregar, marcar como completadas o eliminar tareas de su lista de to-dos.
             </p>
             <div className="flex flex-row gap-4">
               <a
