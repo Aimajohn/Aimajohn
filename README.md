@@ -1,5 +1,15 @@
-### Hi there 👋
+# Hi there, I'm John Rodriguez 👋
 
+Web Developer, specialized on Front-end
+You can see my portfolio [**here**](https://aimajoke.github.io/themoviedb-api/public/) if you're interested!
+
+![Portfolio](https://i.postimg.cc/dt5Dh8r8/aimajoke-github-io-Aimajoke.png)
+## Tecnologías utilizadas 
+ - React + Typescript
+ - Tailwind
+ - React-Router
+ - EmailJS
+ - Formik
 <!--
 **Aimajoke/aimajoke** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
