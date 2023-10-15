@@ -1,7 +1,7 @@
 # Hi there, I'm John Rodriguez 👋
 
 Web Developer, specialized on Front-end
-You can see my portfolio [**here**](https://aimajohn.github.io/themoviedb-api/public/) if you're interested!
+You can see my portfolio [**here**](https://aimajohn.github.io/Aimajohn/) if you're interested!
 
 ![Portfolio](https://i.postimg.cc/dt5Dh8r8/aimajoke-github-io-Aimajoke.png)
 ## Tecnologías utilizadas 
