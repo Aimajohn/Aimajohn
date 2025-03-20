@@ -1,9 +1,8 @@
-# Hi there, I'm John Rodriguez 👋
 
-Web Developer, specialized on Front-end
-[![](https://i.ibb.co/qMMzBXHn/MiNOmbre.png)](https://aimajohn.github.io/Aimajohn/)<!-- Mi portafolio-->
+### My Portfolio
+[![](https://i.imgur.com/Vz90ehE.png)<!-- Mi portafolio-->](https://aimajohn.github.io/Aimajohn/ "![](https://i.imgur.com/Vz90ehE.png)<!-- Mi portafolio-->")
+------------
 
- 
 
 
 ### Languages
@@ -15,33 +14,19 @@ Web Developer, specialized on Front-end
 
 ### Technologies
 
+![React](https://img.shields.io/badge/-HTML-000?&logo=Html5)
+![React](https://img.shields.io/badge/-CSS-000?&logo=Css)
 ![React](https://img.shields.io/badge/-React-000?&logo=React)
+![React](https://img.shields.io/badge/-Tailwind-000?&logo=TailwindCSS)
 ![Node.js](https://img.shields.io/badge/-Node.js-000?&logo=node.js)
 ![Docker](https://img.shields.io/badge/-Docker-000?&logo=Docker)
 ![Linux](https://img.shields.io/badge/-Linux-000?&logo=Linux)
-[![Tailwind](https://badgewind.vercel.app/api/-?icon=simple-icons:tailwindcss)](https://tailwindcss.com/)
 
 ### Web Development Projects
 
 [![](https://img.shields.io/badge/-🧬%20My%20Website-000)](https://aimajohn.github.io/Aimajohn/)
-![Portfolio](https://i.postimg.cc/dt5Dh8r8/aimajoke-github-io-Aimajoke.png)
-## Tecnologías utilizadas 
- - React + Typescript
- - Tailwind
- - React-Router
- - EmailJS
- - Formik
-<!--
-**Aimajoke/aimajoke** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+[![](https://img.shields.io/badge/-🏫%20Espol_Life_Game_Choices-000)](https://aimajohn.github.io/EspolLifeGameChoices/)
+[![](https://img.shields.io/badge/-🍿%20The_Moovies-000)](https://aimajohn.github.io/themoovies/)
+[![](https://img.shields.io/badge/-💬%20Wall_of_Messages-000)](https://aimajohn.github.io/TODO-MERN-STACK/)
+[![](https://img.shields.io/badge/-🟡%20Batabit-000)](https://aimajohn.github.io/batabit/)
 
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
