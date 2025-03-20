@@ -1,8 +1,7 @@
-
 ### My Portfolio
-[![](https://i.imgur.com/Vz90ehE.png)<!-- Mi portafolio-->](https://aimajohn.github.io/Aimajohn/ "![](https://i.imgur.com/Vz90ehE.png)<!-- Mi portafolio-->")
-------------
-
+<a href="https://aimajohn.github.io/Aimajohn/" target="_blank">
+  <img src="https://i.imgur.com/Vz90ehE.png" alt="Mi portafolio">
+</a>
 
 
 ### Languages
