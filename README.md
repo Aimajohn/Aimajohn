@@ -1,7 +1,8 @@
 ### My Portfolio
 <a href="https://aimajohn.github.io/Aimajohn/" target="_blank">
-  <img src="https://i.imgur.com/Vz90ehE.png" alt="Mi portafolio">
+  <img src="https://i.imgur.com/Vz90ehE.png" alt="Mi portafolio" style="max-width: 400px;">
 </a>
+
 
 
 ### Languages
